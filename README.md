@@ -59,14 +59,14 @@ This project involves designing a database schema for an **online bookstore** an
 - Identify most expensive books and top-selling genres
 - Show orders exceeding certain value (e.g., ₹20+)
 
-### 📈 Advanced Analytics
+###  Advanced Analytics
 - Rank customers based on purchase volume  
 - Create views for customer order summaries  
 - Classify customers as Premium, Regular, or Basic  
 - Analyze stock remaining after sales  
 - Find frequently ordered books and seasonal trends  
 
-## ✅ Example Results
+##  Example Results
 
 | Query Type               | Insight                                 |
 |--------------------------|------------------------------------------|
