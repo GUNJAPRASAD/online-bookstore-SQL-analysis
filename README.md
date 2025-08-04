@@ -1,98 +1,44 @@
+# Online Bookstore SQL Analysis
 
-##  Executive Summary
+## Project Overview
+This project presents a complete SQL-based analysis for an online bookstore. It covers relational database design, importing structured datasets, and executing a range of SQL queries to extract valuable business insights.
 
-This project demonstrates a complete **data analytics workflow** for an online bookstore using **SQL**. It includes designing a relational database schema, importing real-world-like datasets, and running a wide range of queries to extract meaningful business insights.
+### Key Components
+- Tables: Books, Customers, Orders (Normalized schema)
+- Data Size: 500+ books, 400+ customers, 450+ orders
+- Tools Used: SQL Server Management Studio (SSMS), SQL (DDL, DML, Views, Window Functions)
 
-Three main entities—**Books**, **Customers**, and **Orders**—were modeled using normalized SQL tables. The datasets contain over 400 customer records, 500 books, and 450+ sales transactions across different countries and genres. Once the data was structured, a series of both basic and advanced SQL queries were applied to simulate day-to-day business questions faced by online retailers.
+## Business Insights
+- Total revenue generated: ₹75,393
+- Top customer identified: Kim Turner with ₹1,396 spent
+- Fantasy emerged as the highest-selling genre
+- Customers segmented into Premium, Regular, and Basic categories based on lifetime spend using CASE logic
+- Inventory status calculated by analyzing remaining stock after fulfilling orders
+- Revenue trends tracked over time using running totals by genre with window functions
 
-Key analytical goals included identifying **top-selling genres**, **highest spending customers**, **revenue trends**, and **inventory forecasting**. Complex queries using **aggregations, joins, subqueries, views, and window functions** were performed to answer questions such as:
+## SQL Skills Demonstrated
+- Joins: INNER JOIN, LEFT JOIN, RIGHT JOIN
+- Aggregations and filtering using GROUP BY and HAVING
+- Use of subqueries and views for reusable logic
+- Window functions such as RANK and SUM OVER for trend analysis
+- Conditional statements using CASE WHEN
+- Date calculations using GETDATE, DATEDIFF, and DATEADD
 
-- Which customers are classified as *Premium* based on lifetime spend?
-- What is the *running total of revenue* by genre?
-- Which books are *ordered more than average*?
-- How much *stock remains* after fulfilling current orders?
+## Project Goals
+- Design and implement a relational database schema
+- Analyze sales data, customer behavior, and inventory levels
+- Solve real-world business problems through SQL
+- Segment customers and evaluate performance metrics
 
-The project also involved:
-- Creating a **view** to display customer-order-book information for reporting
-- Using **CASE statements** for customer segmentation
-- Leveraging **window functions** to rank and track trends
-- Performing **date-based filtering** to analyze recent activity and time since order
+## How to Use
+1. Open the `sql code.sql` file in SQL Server Management Studio (SSMS)
+2. Run the script block by block to review results
+3. Modify queries for deeper exploration and practice
 
-##  Skills Demonstrated
-- **Database Design (ER Modeling)**
-- **SQL Query Writing**
-- **Data Aggregation & Transformation**
-- **Business Problem Solving with Data**
-- **Customer Segmentation Logic**
-- **Window Functions & Views**
+## Recommendations
+- Prioritize marketing for high-performing genres like Fantasy
+- Engage Premium customers with loyalty programs and personalized offers
+- Monitor inventory for frequently ordered books to improve stock management
 
-##  Outcome
-This project simulates the analytical needs of an e-commerce company and showcases how structured data and SQL logic can uncover patterns that support **data-driven decision-making**.
-
-
-## Overview
-This project involves designing a database schema for an **online bookstore** and performing **SQL queries** to analyze sales, customer behavior, book inventory, and revenue. The project includes basic to advanced SQL queries covering data retrieval, aggregation, window functions, views, and classification.
-
-##  Tools & Technologies
-- SQL Server Management Studio (SSMS)
-- SQL (DDL, DML, Aggregates, Joins, Views, Window Functions)
-
-##  Objectives
-- Build relational database tables: `Books`, `Customers`, and `Orders`
-- Run queries to analyze sales performance, customer segmentation, and inventory
-- Practice real-world business scenarios using SQL
-
-##  Tables Created
-- **Books**: Stores book details such as title, author, genre, price, stock  
-- **Customers**: Contains customer information including location  
-- **Orders**: Records purchase data including book, customer, date, quantity, and total amount  
-
-## Sample Queries & Insights
-
-###  Basic Queries
-- List all books in a genre (e.g., `Fiction`)
-- Find books published after a certain year
-- Retrieve customer info from a specific country
-
-###  Sales & Revenue
-- Calculate total revenue and monthly sales
-- Identify most expensive books and top-selling genres
-- Show orders exceeding certain value (e.g., ₹20+)
-
-###  Advanced Analytics
-- Rank customers based on purchase volume  
-- Create views for customer order summaries  
-- Classify customers as Premium, Regular, or Basic  
-- Analyze stock remaining after sales  
-- Find frequently ordered books and seasonal trends  
-
-##  Example Results
-
-| Query Type               | Insight                                 |
-|--------------------------|------------------------------------------|
-| Total Revenue            | ₹75,393                                |
-| Top Customer             | "Kim Turner" - ₹1396 spent               |
-| Top Genre by Sales       | "Fantasy"                                |
-| Running Total by Genre   | Window function used                     |
-| Customer Type Logic      | CASE WHEN on total spending              |
-
-##  Key SQL Concepts Practiced
-- **DDL & DML Statements**
-- **INNER JOIN / LEFT JOIN / RIGHT JOIN**
-- **GROUP BY / HAVING**
-- **Window Functions** (e.g., `RANK`, `SUM OVER`)
-- **Subqueries**
-- **Views & Indexes**
-- **Date Functions** (e.g., `GETDATE`, `DATEDIFF`, `DATEADD`)
-- **CASE WHEN Logic**
-
-##  How to Run
-1. Open the `.sql` file in **SQL Server Management Studio** (SSMS)
-2. Execute each block step by step
-3. Review outputs and tweak queries for further learning
-
-##  Outcome
-This project simulates real-world retail analysis using SQL, helping improve skills in:
-- Data modeling
-- Analytical thinking
-- Query writing for reporting & decision-making
+## Outcome
+This project demonstrates how structured data and SQL logic can be applied to solve real-world business problems. It showcases strong SQL skills in data modeling, query writing, and analytical thinking for e-commerce analytics.
